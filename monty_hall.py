@@ -104,8 +104,9 @@ def run_game(game_mode, number_time_run, _log):
     else:
         print("Number run time [" + str(number_time_run) + "] input not valid")
     
+    print("Monty Hall runned in '" + str(game_mode) + "' mode for " + str(number_time_run) + " times:")
     print("The user won " + str(number_win) + " times [" + str(_map(number_win, 0 , number_time_run, 0, 100)) + "%] and loose " + str(number_loose) + " times [" + str(_map(number_loose, 0 , number_time_run, 0, 100)) + "%]")
 
 
 #first arg["keep" or "change"], second arg[any number run > 0], third arg[1 = log, 0 = no log]
-run_game("keep", 1000, 0)
+run_game("change", 10000000, 0)
